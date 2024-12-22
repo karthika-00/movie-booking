@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Booking Website</h1>
+    </header>
+
+    <div class="container">
+        <div id="movies">
+            <div class="movie">
+                <h3>Inception</h3>
+                <button class="btn" onclick="openBookingForm('Inception')">Book Now</button>
+            </div>
+            <div class="movie">
+                <h3>Interstellar</h3>
+                <button class="btn" onclick="openBookingForm('Interstellar')">Book Now</button>
+            </div>
+            <div class="movie">
+                <h3>The Dark Knight</h3>
+                <button class="btn" onclick="openBookingForm('The Dark Knight')">Book Now</button>
+            </div>
+        </div>
+
+        <div id="booking-form" class="booking-form">
+            <h3>Book Tickets for <span id="movie-title"></span></h3>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="number" id="tickets" placeholder="Number of Tickets">
+            <button onclick="submitBooking()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
